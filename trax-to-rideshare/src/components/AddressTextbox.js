@@ -1,7 +1,7 @@
 const AddressTextBox = () => {
   return (
     <div className="address-textbox">
-      <input type="text" placeholder="Enter your address" />
+      <input type="text" placeholder="Search for an address" />
     </div>
   );
 };
