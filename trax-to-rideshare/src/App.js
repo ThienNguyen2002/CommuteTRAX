@@ -1,6 +1,5 @@
 import React from "react";
 import AddressTextBox from "./components/AddressTextbox";
-import PricesButton from "./components/PricesButton";
 import Map from "./components/Map";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import BarLoader from "react-spinners/BarLoader";
@@ -27,12 +26,12 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <AddressTextBox />
-      <PricesButton />
+      <div className="AddressContainer">
+        <AddressTextBox />
+      </div>
       <Wrapper apiKey={process.env.GM_API_KEY} render={render}>
         <Map />
       </Wrapper>
-      <h1> Hello World!</h1>
     </div>
   );
 }
