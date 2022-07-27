@@ -29,10 +29,7 @@ function App() {
       {" "}
       <AddressTextBox />
       <PricesButton />
-      <Wrapper
-        apiKey={"API_KEY"}
-        render={render}
-      >
+      <Wrapper apiKey={process.env.GM_API_KEY} render={render}>
         <Map />
       </Wrapper>
       <h1> Hello World!</h1>
