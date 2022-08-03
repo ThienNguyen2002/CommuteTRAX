@@ -6,8 +6,8 @@ var currentPrice = 0;
 const markers = [
   [
     "Old Bingham Hwy",
-    40.58656608198297,
-    -111.9950785441254,
+    40.581679672744585,
+    -112.00383203539468,
     currentPrice.toString(),
   ],
 ];
@@ -17,7 +17,7 @@ function Map() {
 
   return (
     <GoogleMap
-      zoom={11.5}
+      zoom={12}
       center={center}
       mapContainerClassName="map-container"
       options={{
