@@ -3,11 +3,11 @@ const fetch = require("node-fetch");
 module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
 
-  //pass in req to get
+  const APIKEY = process.env.RAPID_API_TAXIFARE_KEY;
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": process.env.RAPID_API_TAXIFARE_KEY,
+      "X-RapidAPI-Key": APIKEY,
       "X-RapidAPI-Host": "taxi-fare-calculator.p.rapidapi.com",
       "content-type": "application/json",
     },
