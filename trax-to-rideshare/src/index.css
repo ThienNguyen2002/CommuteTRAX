@@ -1,45 +1,37 @@
 
-.map-container{
-    width: 100%;
-    height: 95vh;
-}
-.address-container{
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
-    background-color: aliceblue;
-    color:white;
-    text-align: center;
-}
-.address-textbox{
-    border-radius: 4px;
-    width: 100%;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.address-textbox input{
-    background: #FFF;
-    padding: 1px 1px 1px 5px;
-    position: relative; top: 0; left: 0;
-    width: 178px;
-    height: 21px;
-    outline: none;
-    border: 1px solid #CCCCCC;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-    text-align: left;
-    font-size: 1rem;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.address-textbox input:focus{
-  width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+.places-container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
   width: 300px;
 }
 
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
 
-.App{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.combobox-input {
+  width: 100%;
+  padding: 0.5rem;
 }
