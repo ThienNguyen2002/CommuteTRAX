@@ -1,10 +1,6 @@
 const fetch = require("node-fetch");
-//const convert = require("convert");
-
 module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
-
-  // const APIKEY = process.env.RAPID_API_TAXIFARE_KEY;
   const options = {
     method: "GET",
     headers: {
@@ -32,15 +28,6 @@ module.exports = async function (context, req) {
   );
 
   let response = await data.then((res) => res.json());
-
-  //in km
-  // let distance = response.journey.distance;
-  //in minutes
-  //let duration = response.journey.duration;
-  //in cents
-  //  let price = response.journey.fares[0].price_in_USD;
-
-  //console.log();
   context.res = {
     // status: 200, /* Defaults to 200 */
     body: response,
